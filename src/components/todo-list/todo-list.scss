@@ -1,0 +1,27 @@
+@import "../common-scss/common.scss";
+
+.todo-list {
+    padding: 0;
+    @extend %block-aligning;
+
+    border: 1px solid $shadow-color;
+    border-radius: $border-radius;
+    box-shadow: 0 0 5px 5px $shadow-color;
+    min-height: 50px;
+
+    li {
+        list-style: none;
+
+        border-bottom: 1px solid $shadow-color;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    @media (max-width: 500px) {
+        width: 310px;
+    }
+}
+
+

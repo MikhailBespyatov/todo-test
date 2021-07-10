@@ -1,0 +1,31 @@
+$font-family: 'STIX Two Math', serif;
+$shadow-color: rgba(151, 140, 140, 0.5);
+$color_1: rgb(85, 85, 206);
+$hover-color: rgb(45, 45, 109);
+$border-radius: 10px;
+$font-size-desc: 24px;
+$font-size-button-desc: 18px;
+$font-size-mobile: 20px;
+$font-size-button-mobile: 16px;
+
+%button {
+    border: none;
+    cursor: pointer;
+}
+
+%block-aligning {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+%item-aligning {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin font($ff, $fs) {
+    font-family: $ff;
+    font-size: $fs;
+}

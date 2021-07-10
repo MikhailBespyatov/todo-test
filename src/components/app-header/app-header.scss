@@ -1,0 +1,48 @@
+@import "../common-scss/common.scss";
+
+.app-header {
+    @extend %block-aligning;
+    @extend %item-aligning;
+    margin-top: 100px;
+
+    @media (max-width: 500px) {
+        width: 310px;
+        flex-direction: column;
+    }
+}
+
+.app-header-title {
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: 500px) {
+        margin-bottom: 20px;
+    }
+}
+
+.app-header-nav {
+    @extend %item-aligning;
+
+    @media (max-width: 500px) {
+        width: 100%;
+    }
+}
+
+.nav-link {
+    @include font($font-family, $font-size-button-desc);
+    display: block;
+    padding: 14px 20px;
+    height: 50px;
+    color: $color_1;
+    text-decoration: none;
+    color: white;
+    background-color: $color_1;
+    border-right: 1px solid white;
+    border-radius: $border-radius;
+    box-sizing: border-box;
+
+    &:last-child {
+        border-right: none; 
+    }
+
+}
